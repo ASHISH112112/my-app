@@ -7,14 +7,16 @@
 	<version>0.0.9</version>
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
-	
 <build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.2.3</version>
-            <!-- Configuration options, if any -->
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use a version compatible with your project -->
+            <configuration>
+                <source>1.7</source> <!-- Set the appropriate Java source version (e.g., 1.7 for Java 7) -->
+                <target>1.7</target> <!-- Set the appropriate Java target version (e.g., 1.7 for Java 7) -->
+            </configuration>
         </plugin>
         <!-- Other plugins -->
     </plugins>
