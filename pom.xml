@@ -8,16 +8,13 @@
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
 	
-	<build>
+<build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version> <!-- Use a version compatible with your project -->
-            <configuration>
-                <source>1.8</source> <!-- Set the appropriate Java source version (e.g., 1.8 for Java 8) -->
-                <target>1.8</target> <!-- Set the appropriate Java target version (e.g., 1.8 for Java 8) -->
-            </configuration>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.2.3</version>
+            <!-- Configuration options, if any -->
         </plugin>
         <!-- Other plugins -->
     </plugins>
