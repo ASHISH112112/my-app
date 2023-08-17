@@ -1,8 +1,12 @@
 node{
 stage('SCM cheackout'){
+
+
   git'https://github.com/ASHISH112112/my-app'
 }
   stage('compile package'){
-    sh 'mvn package'
+    def mvnhome = tool name: 'maven1', type: 'maven'
+    sh "${mvnhome}/bin/mvn package"
   }
+
 }
